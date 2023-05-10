@@ -1,6 +1,6 @@
 (
     function(){
-        angular.module('youtubeApp',[]);
+        angular.module('youtubeApp', []);
     })();
 
 (function () {
@@ -28,8 +28,9 @@
         .factory('youtubeService' , youtubeService);
     
     function youtubeService($http){
-        var apiKey = "AIzaSyCO_f4mE8n4Pw1R0XN3xUZO1tXUAXHuCHw",
-            apiURL = "https://www.googleapis.com/youtube/v3/search?videoEmbeddable=true&order=date&part=snippet&channelId=UCWu91J5KWEj1bQhCBuGeJxw&type=video&maxResults=50&key=" 
+        var apiKey = "AIzaSyCwi1J_NZvpGWmhQf6B2C_WCDmkk3uskyo",
+            apiURL = "https://www.googleapis.com/youtube/v3/search?videoEmbeddable=true"
+            +"&order=date&part=snippet&channelId=UClyA28-01x4z60eWQ2kiNbA&type=video&maxResults=5&key="
             + apiKey,
             youtubeFactory = {};
         
